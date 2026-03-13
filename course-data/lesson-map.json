@@ -1,0 +1,178 @@
+{
+  "course": "Claudepreneur Starter Course",
+  "author": "Kevin Fernandes",
+  "brand": "Claudepreneur",
+  "totalLessons": 6,
+  "estimatedMinutes": 65,
+  "canvaMcp": true,
+  "lessons": [
+    {
+      "id": 1,
+      "title": "Your AI's Brain",
+      "subtitle": "CLAUDE.md — your business context file",
+      "estimatedMinutes": 10,
+      "steps": 2,
+      "builds": "CLAUDE.md",
+      "gift": "cheat-sheet.md",
+      "steps_detail": [
+        {
+          "step": 1,
+          "title": "Build your CLAUDE.md",
+          "description": "5-question interview to create your personalized CLAUDE.md — the file Claude reads before every conversation.",
+          "audioScript": "I'm going to ask you 5 questions about you and your business. Then I'll create a CLAUDE.md file — a cheat sheet that Claude reads every single time you talk to it. Instead of generic responses, Claude will know your name, your business, your clients, your voice. Every single time."
+        },
+        {
+          "step": 2,
+          "title": "Proof it works",
+          "description": "Generate personalized carousel topic ideas that prove CLAUDE.md is working.",
+          "audioScript": "Now the proof. Pick a task — carousel topic ideas, client outreach, or welcome email. Watch how Claude uses YOUR business, YOUR clients, YOUR voice. That's the foundation for the carousel pipeline we're building."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Carousel Copy Writer",
+      "subtitle": "Your first skill — hand-built",
+      "estimatedMinutes": 10,
+      "steps": 3,
+      "builds": "carousel-copy skill",
+      "gift": "20-prompts.md",
+      "steps_detail": [
+        {
+          "step": 1,
+          "title": "The meta moment",
+          "description": "You've been using skills this whole time — they're text files with instructions.",
+          "audioScript": "I need to blow your mind. That slash command you just typed? That's a skill. A text file with instructions. You've been using skills this entire course and didn't know it. Skills have 3 parts: frontmatter, instructions, rules. That's it."
+        },
+        {
+          "step": 2,
+          "title": "Look inside a skill",
+          "description": "Open and examine a real skill file to see how it works.",
+          "audioScript": "Let me show you what a skill actually looks like on the inside. I'm opening the welcome page skill file. See the frontmatter, the instructions, the rules? That's the whole thing. A text file. Plain English."
+        },
+        {
+          "step": 3,
+          "title": "Build carousel-copy",
+          "description": "Hand-build a carousel copy writer skill — frontmatter, instructions, rules — then run it.",
+          "audioScript": "Now we build one. Together. A carousel copy writer. I'll walk you through each part: the frontmatter, the instructions, the rules. Then you run it. Your first skill, built from scratch."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "The Architecture Upgrade",
+      "subtitle": "Multi-file system + research agent",
+      "estimatedMinutes": 15,
+      "steps": 4,
+      "builds": "3 brand files + CLAUDE.md router + research-enriched icp.md",
+      "gift": "brand-templates.md",
+      "steps_detail": [
+        {
+          "step": 1,
+          "title": "Why multi-file?",
+          "description": "Your voice, offer, and audience are different layers — they deserve separate files.",
+          "audioScript": "Your CLAUDE.md works. But as an entrepreneur, you have layers. Your brand voice is different from your offer details, which is different from your ideal client profile. Right now everything is jammed into one file. Let's split it up."
+        },
+        {
+          "step": 2,
+          "title": "Build 3 brand files",
+          "description": "Quick interviews to create brand.md, offer.md, and icp.md.",
+          "audioScript": "Three quick interviews. Brand dot MD for your voice and style. Offer dot MD for what you sell and the transformation. ICP dot MD for your dream client and their language. Two to three questions each. Fast."
+        },
+        {
+          "step": 3,
+          "title": "CLAUDE.md router + first quality jump",
+          "description": "Slim CLAUDE.md to under 200 words, upgrade carousel-copy, and see the first quality jump.",
+          "audioScript": "Here's the architecture secret: your CLAUDE.md should be a ROUTER, not a dump. Under 200 words. It tells Claude WHERE to find the details, not the details themselves. Now watch — we re-run your carousel skill and the output is noticeably better. But we're not done."
+        },
+        {
+          "step": 4,
+          "title": "Research agent enriches icp.md",
+          "description": "A research agent searches the internet live for your audience's real pain language — Reddit, forums, communities — and enriches your icp.md. Re-run carousel-copy for the second quality jump.",
+          "audioScript": "Your icp.md has what YOU know about your audience. But what are they typing into Reddit at 2 AM? What are they venting about in Facebook groups? I'm about to search the internet live, right here, find their real language, and add it to your icp.md. Then we re-run your carousel skill. Watch the hook. It's going to use words you never would have written yourself."
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Build Skills From Examples",
+      "subtitle": "Paste captions, get a skill",
+      "estimatedMinutes": 10,
+      "steps": 3,
+      "builds": "caption-writer skill (from real examples)",
+      "gift": "skill-ideas.md",
+      "steps_detail": [
+        {
+          "step": 1,
+          "title": "Get the Skill Builder",
+          "description": "Discover Anthropic's built-in /skill builder — already part of Claude Code.",
+          "audioScript": "Claude Code comes with a built-in skill builder from Anthropic. It's a slash command: slash skill. It's already installed. It's part of Claude Code itself. But we're not going to use it the generic way. We're going to feed it real captions and let it figure out the pattern."
+        },
+        {
+          "step": 2,
+          "title": "Paste captions + build the skill",
+          "description": "Paste 1-3 Instagram captions. Claude analyzes the patterns and builds a caption-writer skill from them.",
+          "audioScript": "Go to Instagram. Find one to three captions you like. Yours, a creator you admire, anyone. Copy the text. Paste them here. I'll analyze the hook style, body structure, CTA approach, formatting. Then I'll build a caption-writer skill from those patterns — plus your brand files for voice and context. Examples teach the structure. Brand files teach the voice."
+        },
+        {
+          "step": 3,
+          "title": "The Example Method",
+          "description": "The reusable pattern: find examples → paste → get a skill. Works for anything.",
+          "audioScript": "You just learned a second way to build skills. Lesson 2 was from scratch. Today was from examples. Find a caption, a script, an email you like. Paste it. Get a skill. That works for anything with a pattern. Two methods. Use whichever fits."
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "The Carousel Agent",
+      "subtitle": "One command — slides + caption",
+      "estimatedMinutes": 10,
+      "steps": 2,
+      "builds": "carousel-writer agent",
+      "gift": "agent-templates.md",
+      "steps_detail": [
+        {
+          "step": 1,
+          "title": "Skills vs Agents",
+          "description": "Skills are commands you type. Agents are team members Claude delegates to.",
+          "audioScript": "Skills are commands YOU type. You run them. Agents are TEAM MEMBERS that Claude can delegate to. You say I need a carousel about X and Claude delegates the work to a specialist agent — like assigning a task to someone on your team."
+        },
+        {
+          "step": 2,
+          "title": "Build the carousel-writer agent",
+          "description": "Build an agent that combines both skills — one ask, complete carousel package.",
+          "audioScript": "Now we build the agent. It lives in dot claude slash agents. It has access to tools — Read, Write, Glob. When you ask Claude to use it, it reads all your brand files, writes 10 slides AND a caption. One ask. One complete package. That's a system."
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Your Complete System + Finale",
+      "subtitle": "Full pipeline demo + Claude Projects export",
+      "estimatedMinutes": 12,
+      "steps": 3,
+      "builds": "Full pipeline run (copy → Canva carousel → caption) + Claude Projects export",
+      "gift": "mcp-tools-guide.md",
+      "steps_detail": [
+        {
+          "step": 1,
+          "title": "The full pipeline",
+          "description": "Run your complete system end-to-end: topic → carousel copy → Canva design → caption. One flow.",
+          "audioScript": "You've built every piece. Now let's run the full pipeline. Pick a topic. Your carousel agent writes the slides and caption. Canva turns it into real designed images. One flow. Topic to post-ready content."
+        },
+        {
+          "step": 2,
+          "title": "Claude Projects export",
+          "description": "Export your CLAUDE.md and skills to claude.ai Projects — works on any device, no terminal needed.",
+          "audioScript": "Quick bonus: take your CLAUDE.md plus skills to claude.ai Projects. Works on any device, no terminal needed. Same brain, same voice, accessible everywhere."
+        },
+        {
+          "step": 3,
+          "title": "What you built + what's next",
+          "description": "Course recap: everything you built, how it connects, and the full Claudepreneur vision.",
+          "audioScript": "Look at what you built: CLAUDE.md, brand files, two skills, one agent, Canva integration. That's a system. The full version has 30 plus skills. That's what I run. That's what the community teaches you to build."
+        }
+      ]
+    }
+  ]
+}
