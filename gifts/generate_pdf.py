@@ -331,8 +331,12 @@ def build_pdf():
     pdf.set_text_color(*GRAY)
     pdf.cell(0, 6, "From the Claudepreneur Starter Course -- claudepreneur.com", align="C")
 
-    pdf.output("claude-code-cheat-sheet.pdf")
-    print("PDF created: claude-code-cheat-sheet.pdf")
+    import os
+    output_dir = os.path.join(os.path.dirname(os.path.dirname(__file__)), "output")
+    os.makedirs(output_dir, exist_ok=True)
+    out_path = os.path.join(output_dir, "claude-code-cheat-sheet.pdf")
+    pdf.output(out_path)
+    print(f"PDF created: {out_path}")
 
 
 if __name__ == "__main__":
