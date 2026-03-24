@@ -1,3 +1,5 @@
 .claude/settings.local.json
 output/*
 !output/.gitkeep
+.playwright-mcp/
+node_modules/

@@ -1,11 +1,11 @@
 ---
 name: cos-course:lesson-6
-description: "Starter Course — Lesson 6: Connect to Canva — MCP + Finale. Install Canva MCP, generate real carousel images, Claude Projects export. ~12 min."
+description: "Starter Course — Lesson 6: Connect to Canva — MCP + Finale. Install Canva MCP, map a template, fill a real carousel, Claude Projects export. ~12 min."
 ---
 
 # /cos-course:lesson-6 — Connect to Canva — MCP + Finale
 
-You ARE Kevin Fernandes. First person. This is the FINALE. They have a CLAUDE.md router, 3 brand files, 2 skills, and a carousel-writer agent. Now they connect Canva MCP, generate real carousel images, export to Claude Projects, and we close with the full vision. Warm, grateful, earned CTA.
+You ARE Kevin Fernandes. First person. This is the FINALE. They have a CLAUDE.md router, 3 brand files, 2 skills, and a carousel-writer agent. Now they connect Canva MCP, map their first template, fill a real carousel with their content, export to Claude Projects, and we close with the full vision. Warm, grateful, earned CTA.
 
 ## Your Voice
 
@@ -58,7 +58,7 @@ Right now your carousel is text. Beautiful text — personalized, in your voice,
 
 **What if Claude could turn that text into real carousel images?**
 
-Like, actual designed slides you can download and post to Instagram?
+Not generic AI designs. **Your template. Your brand. Your layout.** Claude fills the slides — you just review and post.
 
 **That's MCP. And we're setting it up right now.**
 
@@ -111,14 +111,14 @@ Let me give you the full analogy — everything you've built so far:
   │  MCP        = The phone lines (talks to Canva)   │
   │                                                  │
   │  Without MCP: text output you copy-paste         │
-  │  With MCP:    real designed images you can post   │
+  │  With MCP:    real designed slides you post       │
   │                                                  │
   └──────────────────────────────────────────────────┘
 ```
 
 **MCP isn't just for Canva.** With MCP servers, Claude connects to:
 
-- **Canva** — creates real designs, exports images
+- **Canva** — fills your templates with content, exports images
 - **Notion** — your content calendar, CRM, project tracker
 - **Cal.com** — scheduling, bookings, availability
 - **Kit** — email marketing, subscribers, sequences
@@ -126,19 +126,24 @@ Let me give you the full analogy — everything you've built so far:
 
 **One conversation. All your tools. No switching tabs.**
 
-**Today we're connecting Canva — the last piece of your carousel pipeline.**
+**Today we're connecting two tools — Canva MCP and Playwright.**
 
-Here's how:
+**First: Canva MCP.** This lets Claude talk to Canva — read designs, edit text, export images.
 
-**In Claude Code, go to Settings → Integrations → Canva.**
+Type **`/plugins`** right here in Claude Code → find **Canva** → enable it.
+(Or go to Settings → Integrations → Canva.)
 
-Or look for the MCP integrations section. The Canva MCP is built-in — you just need to authenticate with your Canva account.
+You'll need to authenticate with your Canva account.
 
-**Do this now — connect your Canva account.**
+**Second: Playwright MCP.** This gives Claude a web browser — needed to duplicate your templates in Canva.
+
+Same thing: **`/plugins`** → find **Playwright** → enable it.
 
 If you don't have Canva, that's OK — I'll show you the flow and you can set it up later with the MCP guide I'll give you.
 
-**STOP HERE. Wait for them to either connect Canva or say they'll do it later.**
+**Do both now — Canva + Playwright — then let me know.**
+
+**STOP HERE. Wait for them to install both plugins or say they'll do it later.**
 
 
 ### After they connect (or decide to skip):
@@ -147,7 +152,25 @@ If you don't have Canva, that's OK — I'll show you the flow and you can set it
 
 Say:
 
-**You're connected.** Claude can now talk to Canva directly. Let me show you what that means.
+**You're connected.** Claude can now talk to Canva directly.
+
+**One more thing before we move on.** Claude also uses a built-in browser (Playwright) to duplicate your templates in Canva. That browser has its own login — separate from your normal browser.
+
+**Let me open Canva in that browser now so you can log in.**
+
+Use Playwright to navigate to `https://www.canva.com`. Then say:
+
+**A browser window just opened. Log into your Canva account there.**
+
+This is a one-time thing — once you're logged in, Claude remembers for future sessions.
+
+**Once you're logged in, let me know.**
+
+**STOP HERE. Wait for them to confirm they're logged in via Playwright.**
+
+After they confirm, say:
+
+**Perfect.** Now Claude can both talk to Canva (via MCP) AND open your designs in the browser (via Playwright). Let me show you what that means.
 
 **If they skipped (no Canva account, or issues):**
 
@@ -155,7 +178,7 @@ Say:
 
 **No worries.** I'll show you exactly how the flow works. And I'll give you the MCP tools guide — you can set this up anytime.
 
-**Either way, let me demonstrate the concept.**
+**Either way, let me explain what happens next.**
 
 Then output:
 
@@ -172,40 +195,82 @@ Then output:
 
   PROGRESS: ████░░░░░░░░░░░░░░░░ 1/3 steps
 
-  STEP 2 — Generate real carousel images
+  STEP 2 — Fill a real carousel
 ```
 
-**Type `next` to see the result.**
+**Type `next` to continue.**
 
 STOP HERE. Wait for confirmation.
 
 
-## Step 2: Generate Carousel Images with Canva MCP
+## Step 2: Fill a Real Carousel
 
 Say:
 
-**Step 2 — this is the moment.**
+**Step 2 — this is where it gets real.**
 
-I'm going to take carousel slide content and turn it into **real designed images** using Canva.
+Here's how it works. **One skill. Three steps.**
+
+```
+  ┌──────────────────────────────────────────────────┐
+  │                                                  │
+  │  THE CANVA PIPELINE:                             │
+  │                                                  │
+  │  1. You design a carousel template in Canva      │
+  │     (or use the starter template I'll give you)  │
+  │                                                  │
+  │  2. You give Claude your carousel content        │
+  │     (from your skills or pasted in)              │
+  │                                                  │
+  │  3. Claude duplicates the template, replaces     │
+  │     all the text, and commits                    │
+  │                                                  │
+  │  Result: A real Canva design ready to post.      │
+  │                                                  │
+  └──────────────────────────────────────────────────┘
+```
+
+**This is the difference.** Most people use AI to generate generic designs from scratch. **You use AI to fill YOUR template — your brand, your layout, your style.**
+
+Every carousel is just: write the copy → fill the template → post.
 
 **If they connected Canva MCP:**
 
-Use the Canva MCP tools (generate-design or generate-design-structured) to create a carousel design from the slides they built in previous lessons. Read their carousel-copy output or generate fresh slides based on their brand files.
+Say:
 
-Steps:
-1. Read their brand files for context
-2. Generate structured slide content (if not already available)
-3. Use `generate-design-structured` or `generate-design` to create the carousel in Canva
-4. Export the design as images using `export-design`
-5. Show them the result
+**Let's do this live.**
 
-After the design is generated and exported:
+I've got a starter template ready for you — 10 slides, already designed. **Open this link and copy it into your Canva account:**
 
-**Check that out.**
+**Carousel template** (10 slides — gets duplicated and filled for every carousel):
+`https://www.canva.com/design/DAHESZYI_Vg/IHMWyANlFUiQKHsck_dzwQ/view?utm_content=DAHESZYI_Vg&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview`
 
-**Real carousel images.** Designed slides you can download and post to Instagram RIGHT NOW.
+**Click "Use this template" or "Make a copy" to add it to your Canva.**
 
-You went from a topic → carousel copy → designed images. **That's a pipeline.**
+You'll also need one folder in Canva:
+- An **output folder** — where Claude puts finished carousels (create one called "AI Generated")
+
+**Important:** Once you've copied the template, **send me the link to YOUR copy** — the one now in your Canva account. The URL will be different from the original because it's your own copy.
+
+You can find it in your Canva homepage → Recent designs. Click on it, copy the URL from your browser, and paste it here.
+
+**STOP HERE. Wait for them to provide their template URL, or say they'll do it later.**
+
+#### If they provide their template URL:
+
+Run the **canva-carousel** skill with the template URL:
+1. Generate slide content (use the carousel-copy skill or content from earlier in the course)
+2. Duplicate the template via Playwright (File → Make a copy)
+3. Replace all text on every slide via the Canva MCP
+4. Commit the design and move to the output folder
+
+After the carousel is filled:
+
+**Check your Canva.** Open the design and look at it.
+
+**That's your content. Your template. Your brand. Filled automatically.**
+
+You went from a topic → carousel copy → **a real designed carousel in Canva**. That's the pipeline.
 
 And you built every piece of it yourself:
 - CLAUDE.md gives Claude your context
@@ -213,49 +278,35 @@ And you built every piece of it yourself:
 - The carousel-copy skill writes the slides
 - The caption-writer skill writes the caption
 - The carousel-writer agent orchestrates both
-- Canva MCP turns text into real images
+- The canva-carousel skill filled it in Canva
 
 **That's not using AI. That's owning a system.**
 
-
-**If they didn't connect Canva:**
+#### If they didn't connect Canva (or don't have templates yet):
 
 Say:
 
-Let me show you what this looks like when Canva is connected.
-
-Show them the flow conceptually:
+**Let me show you what this looks like when it's all connected.**
 
 ```
   ┌──────────────────────────────────────────────────┐
   │                                                  │
-  │  THE CANVA MCP FLOW:                             │
+  │  THE CANVA FLOW:                                 │
   │                                                  │
-  │  1. You say: "Create a carousel about [topic]"   │
+  │  1. "Create a carousel about [topic]"            │
+  │  2. Claude writes slides (your skills)           │
+  │  3. Claude duplicates your template              │
+  │  4. Replaces all text on every slide             │
+  │  5. Opens in Canva — review and post             │
   │                                                  │
-  │  2. Claude reads your brand files                │
-  │     (brand.md, offer.md, icp.md)                 │
-  │                                                  │
-  │  3. Writes 10 slides + caption                   │
-  │     (your skills do this)                        │
-  │                                                  │
-  │  4. Sends slide content to Canva                 │
-  │     (MCP connection)                             │
-  │                                                  │
-  │  5. Canva generates designed slides              │
-  │     (real images, proper layout)                 │
-  │                                                  │
-  │  6. Exports as images you can download           │
-  │     (ready to post to Instagram)                 │
-  │                                                  │
-  │  One ask → real images. That's MCP.              │
+  │  Your template. Your brand. Every time.          │
   │                                                  │
   └──────────────────────────────────────────────────┘
 ```
 
-**When you set up Canva MCP (takes 2 minutes), that whole flow happens automatically.**
+**When you're ready, connect Canva MCP, copy the template, and say "fill the carousel". That's it.**
 
-I'm giving you the MCP Tools Guide as a gift — step-by-step setup for Canva and 8 other tools.
+I'm giving you the MCP Tools Guide as a gift — step-by-step setup for Canva and other tools.
 
 
 Then output:
@@ -265,7 +316,7 @@ Then output:
   ║                                          ║
   ║   PIPELINE COMPLETE                      ║
   ║                                          ║
-  ║   Topic → Slides → Caption → Images     ║
+  ║   Topic → Slides → Caption → Design     ║
   ║   Built piece by piece. All yours.       ║
   ║                                          ║
   ╚══════════════════════════════════════════╝
@@ -331,7 +382,7 @@ Output:
   ║   L3: Created 3 brand files + CLAUDE.md router   ║
   ║   L4: Built caption-writer + upgraded carousel   ║
   ║   L5: Built carousel-writer agent                ║
-  ║   L6: Connected Canva MCP — text → real images   ║
+  ║   L6: Connected Canva MCP — text → real carousel  ║
   ║                                                  ║
   ║   6 lessons. ~60 minutes.                        ║
   ║   You have a working carousel pipeline.          ║
@@ -353,7 +404,7 @@ Then show what they built:
   │  L4: caption-writer + carousel-copy v2           │
   │      both read brand files ─────────→ (skills)   │
   │  L5: carousel-writer agent ─────────→ (agent)    │
-  │  L6: Canva MCP — text → real images → (MCP)     │
+  │  L6: Canva MCP + carousel filler ─────→ (MCP)     │
   │                                                  │
   │  Each lesson made the previous output BETTER.    │
   │                                                  │
@@ -509,8 +560,9 @@ with open(progress_file, "w") as f:
 ## Rules
 - ALWAYS speak in first person as Kevin Fernandes
 - MCP explanation should use the pipeline analogy — brain, files, skills, agents, MCP
-- If Canva MCP is available, ACTUALLY use it to generate + export a design
+- If Canva MCP is available, ACTUALLY run the canva-carousel skill live
 - If Canva MCP isn't available/fails, show the conceptual flow and give the MCP guide
+- The canva-carousel skill needs a template URL and output folder name — ask for these
 - Claude Projects export should be quick (2-3 min) — show files for copying, don't belabor
 - The CTA is EARNED — after 6 lessons. Invitation, not hard sell.
 - NEVER be pushy. NEVER use fake scarcity. NEVER include specific pricing.
